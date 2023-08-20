@@ -1,0 +1,11 @@
+mat-card {
+    &:not(:first-child) {
+        margin-top: 1rem;
+    }
+}
+
+button.add {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}

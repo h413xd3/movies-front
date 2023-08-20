@@ -1,0 +1,16 @@
+div.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+mat-toolbar {
+    justify-content: space-between;
+    box-shadow: 0 0 8px #00000080;
+}
+
+div.content {
+    flex-grow: 1;
+    overflow: auto;
+    padding: 1em;
+}

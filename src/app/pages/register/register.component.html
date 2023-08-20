@@ -1,0 +1,5 @@
+<app-auth-container title="Register">
+    <app-auth title="Register" [error]="error" (auth)="onRegister($event)"/>
+    <br>
+    <a routerLink="/login">Already register</a>
+</app-auth-container>

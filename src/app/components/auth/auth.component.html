@@ -1,0 +1,22 @@
+<form [formGroup]="form" (submit)="onSubmit()">
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="Email"
+      type="email"
+      name="email"
+      formControlName="email"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="Password"
+      type="password"
+      name="password"
+      formControlName="password"
+    />
+  </mat-form-field>
+  <p *ngIf="error !== null" class="error" >{{error}}</p>
+  <button mat-raised-button color="primary" type="submit">{{ title }}</button>
+</form>

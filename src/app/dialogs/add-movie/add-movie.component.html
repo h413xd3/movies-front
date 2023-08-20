@@ -1,0 +1,35 @@
+<h1 mat-dialog-title>Add movie</h1>
+<div>
+  <form [formGroup]="form">
+    <mat-form-field>
+      <input matInput placeholder="Title" formControlName="title" name="title" />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="number"
+        placeholder="Year"
+        formControlName="year"
+        name="year"
+        min="1895"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="number"
+        placeholder="Rating"
+        formControlName="rating"
+        name="rating"
+        min="0"
+        max="5"
+      />
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-flat-button cdkFocusInitial color="primary" (click)="onAdd()">
+    Add
+  </button>
+</div>
